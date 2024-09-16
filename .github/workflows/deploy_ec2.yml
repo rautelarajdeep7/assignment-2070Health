@@ -28,15 +28,15 @@ jobs:
         uses: hashicorp/setup-terraform@v2
       
       - name: Terraform Init
-        run: terraform init ./terraform/ 
+        run: terraform init terraform/ 
 
       - name: Terraform Validate
-        run: terraform validate ./terraform/
+        run: terraform validate terraform/
 
       - name: Terraform Plan
-        run: terraform plan ./terraform/
+        run: terraform plan terraform/
 
       - name: Terraform apply
-        run: terraform apply -auto-approve ./terrafomrm/
+        run: terraform apply -auto-approve terrafomrm/
 
 
