@@ -31,9 +31,8 @@ jobs:
         uses: hashicorp/setup-terraform@v2
       
       - name: Terraform Apply
-        run: 
-          cd terraform/ 
-          terraform init 
-          terraform validate 
-          terraform plan 
-          terraform apply -auto-approve
+        run: cd terraform/
+        run: terraform init
+        run: terraform validate
+        run: terraform plan
+        run: terraform apply -auto-approve
